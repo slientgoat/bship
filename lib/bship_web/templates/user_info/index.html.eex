@@ -1,0 +1,28 @@
+<h2>Listing Users</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= gettext"帐号" %></th>
+      <th><%= gettext"昵称" %></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user_info <- @users do %>
+    <tr>
+      <td><%= user_info.account %></td>
+      <td><%= user_info.nick %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: user_info_path(@conn, :show, user_info), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: user_info_path(@conn, :edit, user_info), class: "btn btn-default btn-xs" %></span>
+        <span><%=  # link "Delete", to: user_info_path(@conn, :delete, user_info), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New User info", to: user_info_path(@conn, :new) %></span>

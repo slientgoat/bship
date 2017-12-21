@@ -1,0 +1,3 @@
+<h2>Edit App info</h2>
+
+<%= render "form.html", Map.put(assigns, :action, app_info_path(@conn, :update, @app_info)) %>

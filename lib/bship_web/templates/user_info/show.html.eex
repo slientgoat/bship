@@ -1,0 +1,23 @@
+<h2>Show User info</h2>
+
+<ul>
+
+  <li>
+    <strong>Account:</strong>
+    <%= @user_info.account %>
+  </li>
+
+  <li>
+    <strong>Nick:</strong>
+    <%= @user_info.nick %>
+  </li>
+
+  <li>
+    <strong>Pwd hash:</strong>
+    <%= @user_info.pwd_hash %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: user_info_path(@conn, :edit, @user_info) %></span>
+<span><%= link "Back", to: user_info_path(@conn, :index) %></span>

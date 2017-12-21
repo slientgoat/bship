@@ -1,0 +1,2 @@
+let socket = new Socket("/socket", {params: {userToken: "123"}})
+socket.connect()

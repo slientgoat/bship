@@ -1,0 +1,5 @@
+<h2>New App info</h2>
+
+<%= render "form.html", Map.put(assigns, :action, app_info_path(@conn, :create)) %>
+
+<span><%= link gettext("返回"), to: app_info_path(@conn, :index) %></span>

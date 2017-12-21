@@ -1,0 +1,2 @@
+<h2><%= gettext "注册" %></h2>
+<%= render "form.html", Map.put(assigns, :action, auth_path(@conn, :do_sign_up)) %>

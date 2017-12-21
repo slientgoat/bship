@@ -1,0 +1,3 @@
+<%= if @tag == "提交" do
+    submit gettext("提交"), @opts
+end %>

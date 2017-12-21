@@ -1,0 +1,32 @@
+<h2><%= gettext("应用列表") %></h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= gettext("名称") %></th>
+      <th><%= gettext("胜利") %></th>
+      <th><%= gettext("平局") %></th>
+      <th><%= gettext("落榜") %></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for app_info <- @apps do %>
+    <tr>
+      <td><%= app_info.name %></td>
+      <td><%= app_info.gt %></td>
+      <td><%= app_info.eq %></td>
+      <td><%= app_info.lt %></td>
+
+      <td class="text-right">
+        <span><%= add_a(@conn,"查看", to: app_info_path(@conn, :show, app_info), class: "btn btn-default btn-xs") %></span>
+        <span><%= add_a(@conn,"编辑", to: app_info_path(@conn, :edit, app_info), class: "btn btn-default btn-xs") %></span>
+        <span><%= add_a(@conn,"删除", to: app_info_path(@conn, :delete, app_info), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs") %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link gettext("添加应用"), to: app_info_path(@conn, :new) %></span>

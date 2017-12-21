@@ -1,0 +1,58 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: en\n"
+
+#: lib/bship_web/templates/auth/chg_pwd.html.eex:1
+#: lib/bship_web/templates/share/add_a.html.eex:5
+msgid "修改密码"
+msgstr "modfify password"
+
+#: lib/bship_web/templates/auth/form.html.eex:29
+msgid "再次确认密码"
+msgstr ""
+
+#: lib/bship_web/templates/auth/form.html.eex:22
+msgid "密码"
+msgstr ""
+
+#: lib/bship_web/templates/auth/form.html.eex:9
+msgid "帐号"
+msgstr ""
+
+#: lib/bship_web/templates/auth/form.html.eex:15
+msgid "昵称"
+msgstr ""
+
+#: lib/bship_web/templates/auth/sign_up.html.eex:1
+#: lib/bship_web/templates/share/add_a.html.eex:3
+msgid "注册"
+msgstr ""
+
+#: lib/bship_web/templates/auth/sign_in.html.eex:1
+#: lib/bship_web/templates/share/add_a.html.eex:2
+msgid "登录"
+msgstr ""
+
+#: lib/bship_web/templates/share/add_button.html.eex:2
+msgid "提交"
+msgstr ""
+
+#: lib/bship_web/templates/share/add_a.html.eex:4
+msgid "退出"
+msgstr ""
+
+#: lib/bship_web/templates/page/index.html.eex:2
+msgid "一个简陋的%{name}!"
+msgstr ""
+
+#: lib/bship_web/templates/share/add_a.html.eex:1
+msgid "首页"
+msgstr ""

@@ -1,0 +1,35 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, gettext("名称"), class: "control-label" %>
+    <%= text_input f, :name, class: "form-control" %>
+    <%= error_tag f, :name %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, gettext("胜利"), class: "control-label" %>
+    <%= number_input f, :gt, class: "form-control" %>
+    <%= error_tag f, :gt %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, gettext("平局"), class: "control-label" %>
+    <%= number_input f, :eq, class: "form-control" %>
+    <%= error_tag f, :eq %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, gettext("落榜"), class: "control-label" %>
+    <%= number_input f, :lt, class: "form-control" %>
+    <%= error_tag f, :lt %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>

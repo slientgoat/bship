@@ -1,0 +1,27 @@
+<h2><%= gettext("应用信息") %></h2>
+
+<ul>
+
+  <li>
+    <strong><%= gettext("名称") %>:</strong>
+    <%= @app_info.name %>
+  </li>
+
+  <li>
+    <strong><%= gettext("胜利") %>:</strong>
+    <%= @app_info.gt %>
+  </li>
+
+  <li>
+    <strong><%= gettext("平局") %>:</strong>
+    <%= @app_info.eq %>
+  </li>
+
+  <li>
+    <strong><%= gettext("落榜") %>:</strong>
+    <%= @app_info.lt %>
+  </li>
+
+</ul>
+
+<span><%= add_a(@conn,"编辑", to: app_info_path(@conn, :edit, @app_info), class: "btn btn-default btn-xs") %></span>

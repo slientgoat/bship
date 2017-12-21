@@ -1,0 +1,26 @@
+<span>
+<%= cond  do
+ @tag == "首页" ->
+    link gettext("首页"), to: page_path(@conn, :index)
+ @tag == "登录" ->
+    link gettext("登录"), to: auth_path(@conn, :sign_in)
+ @tag == "注册" ->
+    link gettext("注册"), to: auth_path(@conn, :sign_up)
+ @tag == "退出" ->
+    link gettext("退出"), to: auth_path(@conn, :do_sign_out)
+ @tag == "修改密码" ->
+    link gettext("修改密码"), to: auth_path(@conn, :chg_pwd)
+ @tag == "查看" ->
+    link gettext("查看"), @opts
+ @tag == "编辑" ->
+    link gettext("编辑"), @opts
+ @tag == "删除" ->
+    link gettext("删除"), @opts
+ @tag == "添加应用" ->
+    link gettext("添加应用"), @opts
+ @tag == "删除" ->
+    link gettext("删除"), @opts
+ true ->
+    link @tag, @opts
+end %>
+</span>
