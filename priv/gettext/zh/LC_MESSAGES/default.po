@@ -11,7 +11,7 @@ msgstr ""
 "Language: zh\n"
 
 #: lib/bship_web/templates/auth/chg_pwd.html.eex:1
-#: lib/bship_web/templates/share/add_a.html.eex:5
+#: lib/bship_web/templates/share/add_a.html.eex:12
 msgid "修改密码"
 msgstr ""
 
@@ -24,20 +24,24 @@ msgid "密码"
 msgstr ""
 
 #: lib/bship_web/templates/auth/form.html.eex:9
+#: lib/bship_web/templates/user_info/form.html.eex:9
+#: lib/bship_web/templates/user_info/index.html.eex:6
 msgid "帐号"
 msgstr ""
 
 #: lib/bship_web/templates/auth/form.html.eex:15
+#: lib/bship_web/templates/user_info/form.html.eex:15
+#: lib/bship_web/templates/user_info/index.html.eex:7
 msgid "昵称"
 msgstr ""
 
 #: lib/bship_web/templates/auth/sign_up.html.eex:1
-#: lib/bship_web/templates/share/add_a.html.eex:3
+#: lib/bship_web/templates/share/add_a.html.eex:8
 msgid "注册"
 msgstr ""
 
 #: lib/bship_web/templates/auth/sign_in.html.eex:1
-#: lib/bship_web/templates/share/add_a.html.eex:2
+#: lib/bship_web/templates/share/add_a.html.eex:6
 msgid "登录"
 msgstr ""
 
@@ -45,7 +49,7 @@ msgstr ""
 msgid "提交"
 msgstr ""
 
-#: lib/bship_web/templates/share/add_a.html.eex:4
+#: lib/bship_web/templates/share/add_a.html.eex:10
 msgid "退出"
 msgstr ""
 
@@ -53,6 +57,76 @@ msgstr ""
 msgid "一个简陋的%{name}!"
 msgstr ""
 
-#: lib/bship_web/templates/share/add_a.html.eex:1
+#: lib/bship_web/templates/share/add_a.html.eex:4
 msgid "首页"
+msgstr ""
+
+#: lib/bship_web/templates/share/add_a.html.eex:18
+#: lib/bship_web/templates/share/add_a.html.eex:22
+msgid "删除"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/form.html.eex:9
+#: lib/bship_web/templates/app_info/index.html.eex:6
+#: lib/bship_web/templates/app_info/show.html.eex:6
+msgid "名称"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/form.html.eex:21
+#: lib/bship_web/templates/app_info/index.html.eex:8
+#: lib/bship_web/templates/app_info/show.html.eex:16
+msgid "平局"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/show.html.eex:1
+msgid "应用信息"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/index.html.eex:1
+msgid "应用列表"
+msgstr ""
+
+#: lib/bship_web/templates/share/add_a.html.eex:14
+msgid "查看"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/index.html.eex:32
+#: lib/bship_web/templates/share/add_a.html.eex:20
+msgid "添加应用"
+msgstr ""
+
+#: lib/bship_web/templates/share/add_a.html.eex:16
+msgid "编辑"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/form.html.eex:15
+#: lib/bship_web/templates/app_info/index.html.eex:7
+#: lib/bship_web/templates/app_info/show.html.eex:11
+msgid "胜利"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/form.html.eex:27
+#: lib/bship_web/templates/app_info/index.html.eex:9
+#: lib/bship_web/templates/app_info/show.html.eex:21
+msgid "落榜"
+msgstr ""
+
+#: lib/bship_web/templates/app_info/new.html.eex:5
+msgid "返回"
+msgstr ""
+
+#: lib/bship_web/templates/layout/app.html.eex:20
+msgid "中文"
+msgstr ""
+
+#: lib/bship_web/templates/layout/app.html.eex:21
+msgid "英语"
+msgstr ""
+
+#: lib/bship_web/templates/page/index.html.eex:3
+msgid "基于Phoenix框架实现的游戏厅"
+msgstr ""
+
+#: lib/bship_web/templates/layout/app.html.eex:23
+msgid "你好"
 msgstr ""

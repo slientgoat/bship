@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= Gettext.get_locale(BshipWeb.Gettext) %>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,16 +12,22 @@
   </head>
 
   <body>
-    <div class="container">
+
+  <div class="container">
       <header class="header">
         <nav role="navigation">
           <ul class="nav nav-pills pull-right">
+              <a href="<%=  page_path(@conn, :index, locale: :zh) %>"><%= gettext "中文" %></a></option>|
+              <a href="<%=  page_path(@conn, :index, locale: :en) %>"><%= gettext "英语" %></a></option>|
             <%= if current_token(@conn) do %>
-              <%= current_resource(@conn).nick %>
-              <%= add_a(@conn,"退出") %>
+            <%= gettext("你好")<>","<>current_resource(@conn).nick %>
+            |
+            <%= add_a(@conn,"退出") %>
+            |
               <%= add_a(@conn,"修改密码") %>
             <% else %>
               <%= add_a(@conn,"登录") %>
+            |
               <%= add_a(@conn,"注册") %>
             <% end %>
           </ul>

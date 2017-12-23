@@ -8,6 +8,7 @@ use Mix.Config
 # with brunch.io to recompile .js and .css sources.
 config :bship, BshipWeb.Endpoint,
   http: [port: 4000],
+  url: [host: "192.168.10.71", port: 4000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,

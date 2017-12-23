@@ -61,10 +61,6 @@ msgstr ""
 msgid "首页"
 msgstr ""
 
-#: lib/bship_web/controllers/lobby_controller.ex:7
-msgid "一个简陋"
-msgstr ""
-
 #: lib/bship_web/templates/share/add_a.html.eex:18
 #: lib/bship_web/templates/share/add_a.html.eex:22
 msgid "删除"
@@ -117,4 +113,20 @@ msgstr ""
 
 #: lib/bship_web/templates/app_info/new.html.eex:5
 msgid "返回"
+msgstr ""
+
+#: lib/bship_web/templates/layout/app.html.eex:20
+msgid "中文"
+msgstr ""
+
+#: lib/bship_web/templates/layout/app.html.eex:21
+msgid "英语"
+msgstr ""
+
+#: lib/bship_web/templates/page/index.html.eex:3
+msgid "基于Phoenix框架实现的游戏厅"
+msgstr ""
+
+#: lib/bship_web/templates/layout/app.html.eex:23
+msgid "你好"
 msgstr ""

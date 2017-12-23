@@ -1,6 +1,6 @@
 <div class="jumbotron">
     <h2><%= gettext "一个简陋的%{name}!", name: "ting" %></h2>
-    <p class="lead">基于Phoenix框架实现的游戏厅</p>
+    <p class="lead"><%= gettext "基于Phoenix框架实现的游戏厅" %> </p>
 </div>
 <div>
     <%= for app_info <- @apps do %>
