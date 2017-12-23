@@ -41,7 +41,8 @@ config :bship, BshipWeb.Endpoint,
       ~r{lib/bship_web/templates/.*(eex)$},
       ~r{lib/bship_web/element.ex},
       ~r{lib/bship_web/controllers/.*(ex)$},
-      ~r{lib/bship_web/router.ex}
+      ~r{lib/bship_web/router.ex},
+      ~r{lib/bship_web/channels/.*(ex)$},
     ]
   ]
 

@@ -16,6 +16,7 @@ defmodule BshipWeb.Router do
     plug Guardian.Plug.VerifySession
 #    plug Guardian.Plug.VerifyHeader, claims: %{"typ" => "access"}
     plug Guardian.Plug.LoadResource, allow_blank: true
+    plug :put_user_token
   end
 
   # 授权页面验证方式-浏览器访问
@@ -54,4 +55,12 @@ defmodule BshipWeb.Router do
   # scope "/api", BshipWeb do
   #   pipe_through :api
   # end
+
+  defp put_user_token(conn, _) do
+    if user_token = Bship.Guardian.Plug.current_token(conn) do
+      assign(conn, :user_token, user_token)
+    else
+      conn
+    end
+  end
 end

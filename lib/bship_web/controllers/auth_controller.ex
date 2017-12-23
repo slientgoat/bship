@@ -6,6 +6,7 @@ defmodule BshipWeb.AuthController do
 
   def auth_error(conn, {type, _reason}, _opts) do
     body = Poison.encode!(%{message: to_string(type)})
+    IO.puts(inspect(conn))
     send_resp(conn, 401, body)
   end
 

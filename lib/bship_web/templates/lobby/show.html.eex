@@ -1,2 +1,44 @@
-let socket = new Socket("/socket", {params: {userToken: "123"}})
-socket.connect()
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div style="width:900px;margin: 0 auto;">
+
+    <div id="header" style="background-color:#e7e4ff;text-align: center;">
+        <span style="float: right;"><%= add_a(@conn,"首页") %></span>
+        <h1 style="margin-bottom:0;"><%= @lobby.name %></h1>
+    </div>
+
+    <div style="background-color:#fdffb9;height: 800px;width:200px;float:left;">
+        <b style="text-align: center;"><%= gettext("在线玩家") %>：</b><br>
+        <div id="online_players">
+        </div>
+    </div>
+
+    <div id="content" style="background-color:#EEEEEE;height:800px;width:700px;float:left;">
+        <div id="introduce" style="background-color:#ffe5d0;clear:both;text-align:center;height:600px;">
+            <p style="float: left"><%= gettext "介绍:" %></p>
+            <p>     <%= gettext "bship-introduce" %></p>
+            <p style="float: left"><%= gettext "玩法:" %></p>
+            <p>     <%= gettext "bship-rules" %></p>
+        </div>
+        <div id="messages" style="background-color:#9fff99;clear:both;text-align:center;height:150px;">
+
+        </div>
+        <div style="background-color:#FFA500;clear:both;text-align:center;height:50px;">
+            <input style="height: 46px;width: 500px;float: left;" id="chat-input" type="text"></input>
+            <button id="push_msg" style="width: 180px;height: 50px;"><%= gettext "发送" %></button>
+        </div>
+    </div>
+
+</div>
+<script> window.lobbyId = "<%= @lobby.id %>";</script>
+<script>window.userToken = "<%= assigns[:user_token] %>";</script>
+<script src="<%= static_path(@conn, "/js/app.js") %>"/></script>
+</body>
+</html>

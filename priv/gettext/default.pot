@@ -130,3 +130,27 @@ msgstr ""
 #: lib/bship_web/templates/layout/app.html.eex:23
 msgid "你好"
 msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:29
+msgid "bship-introduce"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:31
+msgid "bship-rules"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:28
+msgid "介绍:"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:30
+msgid "玩法:"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:38
+msgid "发送"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:18
+msgid "在线玩家"
+msgstr ""
