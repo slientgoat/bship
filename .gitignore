@@ -4,7 +4,7 @@
 /db
 /deps
 /*.ez
-
+/assets/package-lock.json
 # Generated on crash by the VM
 erl_crash.dump
 
