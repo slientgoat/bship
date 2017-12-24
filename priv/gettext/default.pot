@@ -53,10 +53,6 @@ msgstr ""
 msgid "退出"
 msgstr ""
 
-#: lib/bship_web/templates/page/index.html.eex:2
-msgid "一个简陋的%{name}!"
-msgstr ""
-
 #: lib/bship_web/templates/share/add_a.html.eex:4
 msgid "首页"
 msgstr ""
@@ -131,26 +127,26 @@ msgstr ""
 msgid "你好"
 msgstr ""
 
-#: lib/bship_web/templates/lobby/show.html.eex:29
-msgid "bship-introduce"
-msgstr ""
-
-#: lib/bship_web/templates/lobby/show.html.eex:31
-msgid "bship-rules"
-msgstr ""
-
-#: lib/bship_web/templates/lobby/show.html.eex:28
+#: lib/bship_web/templates/lobby/show.html.eex:25
 msgid "介绍:"
 msgstr ""
 
-#: lib/bship_web/templates/lobby/show.html.eex:30
+#: lib/bship_web/templates/lobby/show.html.eex:31
 msgid "玩法:"
 msgstr ""
 
-#: lib/bship_web/templates/lobby/show.html.eex:38
+#: lib/bship_web/templates/lobby/show.html.eex:43
 msgid "发送"
 msgstr ""
 
 #: lib/bship_web/templates/lobby/show.html.eex:18
 msgid "在线玩家"
+msgstr ""
+
+#: lib/bship_web/controllers/auth_controller.ex:12
+msgid "请先登录后,再进入游戏厅"
+msgstr ""
+
+#: lib/bship_web/templates/page/index.html.eex:2
+msgid "一个简单的%{name}!"
 msgstr ""

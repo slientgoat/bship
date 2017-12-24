@@ -1,0 +1,23 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: zh\n"
+
+msgid "Bship-introduce"
+msgstr "海战（英语：Battleship，又名海战棋）是双人玩的猜谜游戏。Clifford Von Wickler在20世纪初发明，由美国的游戏公司Milton Bradley带领而流行的，但在成为图版游戏之前使用铅笔和纸张来玩的。"
+
+msgid "Bship-rules"
+msgstr "每个玩家在一张空白的格子纸上开始，并在上面放置一些船。通常使用五艘船，每艘船占据2～5个方格不等。每个玩家轮流射击，通过说出他们希望的方格坐标来射击。另一个玩家必须说出射击是否命中。纸上版本的游戏由一张纸上相连的10x10的格子组成。左边的格子不仅用来记录你每艘船的位置，而且同时记录你的对手所射击的位置。右边的空格除了记录你射击的位置外，还记录每一击的结果(射中船只的标志或者打偏了)。当记录击中的时候，玩家可以填下字母A代表航空母舰（5个空格），B代表战列舰（4个空格），C代表驱逐舰或巡洋舰（3个空格），S代表潜艇（2个空格）（海战棋是3个空格）和P代表巡逻艇（2个空格）。当记录打偏时，画个大叉（╳）在格子里代表落空。在图版游戏中，代表炸弹的是圆筒状塑胶钉。游戏中所附的塑胶钉有红白两种颜色，当游戏过程中成功击中对手的军舰时，就在自己的戏盘中插上代表“中弹点”的红色塑胶钉，如果没击中就插上白色塑胶钉，利用这方法摸索推敲敌舰的位置以将其击沉"
+
+msgid "Mines-introduce"
+msgstr "扫雷介绍"
+
+msgid "Mines-rules"
+msgstr "扫雷规则"

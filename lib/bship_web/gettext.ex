@@ -21,4 +21,8 @@ defmodule BshipWeb.Gettext do
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
   use Gettext, otp_app: :bship
+
+  def lobby_text(msg_id) do
+    Gettext.dgettext(BshipWeb.Gettext, "lobby", msg_id)
+  end
 end

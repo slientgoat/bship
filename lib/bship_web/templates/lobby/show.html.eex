@@ -23,9 +23,17 @@
     <div id="content" style="background-color:#EEEEEE;height:800px;width:700px;float:left;">
         <div id="introduce" style="background-color:#ffe5d0;clear:both;text-align:center;height:600px;">
             <p style="float: left"><%= gettext "介绍:" %></p>
-            <p>     <%= gettext "bship-introduce" %></p>
+            <p> <%=
+                msg_id= "#{@lobby.name}-introduce"
+                lobby_text(msg_id)
+                %>
+            </p>
             <p style="float: left"><%= gettext "玩法:" %></p>
-            <p>     <%= gettext "bship-rules" %></p>
+            <p> <%=
+                msg_id= "#{@lobby.name}-rules"
+                lobby_text(msg_id)
+                %>
+            </p>
         </div>
         <div id="messages" style="background-color:#9fff99;clear:both;text-align:center;height:150px;">
 

@@ -6,8 +6,14 @@ defmodule BshipWeb.AuthController do
 
   def auth_error(conn, {type, _reason}, _opts) do
     body = Poison.encode!(%{message: to_string(type)})
-    IO.puts(inspect(conn))
-    send_resp(conn, 401, body)
+    case conn.request_path do
+      "/lobbies"<>_id ->
+        conn
+        |> put_flash(:error, gettext("请先登录后,再进入游戏厅"))
+        |> redirect(to: auth_path(conn, :sign_in))
+      _ ->
+        send_resp(conn, 401, body)
+    end
   end
 
   # 注册页面

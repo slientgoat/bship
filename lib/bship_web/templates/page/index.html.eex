@@ -1,11 +1,11 @@
 <div class="jumbotron">
-    <h2><%= gettext "一个简陋的%{name}!", name: "ting" %></h2>
+    <h2><%= gettext "一个简单的%{name}!", name: "Bship" %></h2>
     <p class="lead"><%= gettext "基于Phoenix框架实现的游戏厅" %> </p>
 </div>
 <div>
     <%= for app_info <- @apps do %>
     <a href="<%= lobby_path(@conn, :show, app_info) %>">
-        <img src="images/bship.jpg" alt="<%= app_info.name %>">
+        <img height="150px" width="250px" src="images/<%= app_info.name %>.jpg">
     </a>
     <% end %>
 </div>

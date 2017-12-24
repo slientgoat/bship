@@ -1,0 +1,23 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: en\n"
+
+msgid "Bship-introduce"
+msgstr "Battleship (also Battleships or Sea Battle[1]) is a guessing game for two players. It is played on ruled grids (paper or board) on which the players' fleets of ships (including battleships) are marked. The locations of the fleet are concealed from the other player. Players alternate turns calling \"shots\" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.        Battleship is known worldwide as a pencil and paper game which dates from World War I. It was published by various companies as a pad-and-pencil game in the 1930s, and was released as a plastic board game by Milton Bradley in 1967. The game has spawned electronic versions, video games, smart device apps and a film."
+
+msgid "Bship-rules"
+msgstr "After the ships have been positioned, the game proceeds in a series of rounds. In each round, each player takes a turn to announce a target square in the opponent's grid which is to be shot at. The opponent announces whether or not the square is occupied by a ship, and if it is a \"miss\", the opponent player marks their primary grid with a white peg; if a \"hit\" they mark this on their own primary grid with a red peg. The attacking player notes the hit or miss on their own \"tracking\" grid with the appropriate color peg (red for \"hit\", white for \"miss\"), in order to build up a picture of the opponent's fleet.        When all of the squares of a ship have been hit, the ship is sunk, and the ship's owner announces this (e.g. \"You sank my battleship!\"). If all of a player's ships have been sunk, the game is over and their opponent wins."
+
+msgid "Mines-introduce"
+msgstr "Introduce for Mines"
+
+msgid "Mines-rules"
+msgstr "Rules for Mines"

@@ -53,10 +53,6 @@ msgstr "Submit"
 msgid "退出"
 msgstr "SignOut"
 
-#: lib/bship_web/templates/page/index.html.eex:2
-msgid "一个简陋的%{name}!"
-msgstr "A simple %{name}!"
-
 #: lib/bship_web/templates/share/add_a.html.eex:4
 msgid "首页"
 msgstr "Home"
@@ -64,56 +60,56 @@ msgstr "Home"
 #: lib/bship_web/templates/share/add_a.html.eex:18
 #: lib/bship_web/templates/share/add_a.html.eex:22
 msgid "删除"
-msgstr ""
+msgstr "Delete"
 
 #: lib/bship_web/templates/app_info/form.html.eex:9
 #: lib/bship_web/templates/app_info/index.html.eex:6
 #: lib/bship_web/templates/app_info/show.html.eex:6
 msgid "名称"
-msgstr ""
+msgstr "Name"
 
 #: lib/bship_web/templates/app_info/form.html.eex:21
 #: lib/bship_web/templates/app_info/index.html.eex:8
 #: lib/bship_web/templates/app_info/show.html.eex:16
 msgid "平局"
-msgstr ""
+msgstr "Equal"
 
 #: lib/bship_web/templates/app_info/show.html.eex:1
 msgid "应用信息"
-msgstr ""
+msgstr "App Information"
 
 #: lib/bship_web/templates/app_info/index.html.eex:1
 msgid "应用列表"
-msgstr ""
+msgstr "App List"
 
 #: lib/bship_web/templates/share/add_a.html.eex:14
 msgid "查看"
-msgstr ""
+msgstr "Show"
 
 #: lib/bship_web/templates/app_info/index.html.eex:32
 #: lib/bship_web/templates/share/add_a.html.eex:20
 msgid "添加应用"
-msgstr ""
+msgstr "Add App"
 
 #: lib/bship_web/templates/share/add_a.html.eex:16
 msgid "编辑"
-msgstr ""
+msgstr "Edit"
 
 #: lib/bship_web/templates/app_info/form.html.eex:15
 #: lib/bship_web/templates/app_info/index.html.eex:7
 #: lib/bship_web/templates/app_info/show.html.eex:11
 msgid "胜利"
-msgstr ""
+msgstr "Victory"
 
 #: lib/bship_web/templates/app_info/form.html.eex:27
 #: lib/bship_web/templates/app_info/index.html.eex:9
 #: lib/bship_web/templates/app_info/show.html.eex:21
 msgid "落榜"
-msgstr ""
+msgstr "Fail"
 
 #: lib/bship_web/templates/app_info/new.html.eex:5
 msgid "返回"
-msgstr ""
+msgstr "Back"
 
 #: lib/bship_web/templates/layout/app.html.eex:20
 msgid "中文"
@@ -131,26 +127,27 @@ msgstr "A game labby base on phoenixframework"
 msgid "你好"
 msgstr "Hello"
 
-#: lib/bship_web/templates/lobby/show.html.eex:29
-msgid "bship-introduce"
-msgstr "Battleship (also Battleships or Sea Battle[1]) is a guessing game for two players. It is played on ruled grids (paper or board) on which the players' fleets of ships (including battleships) are marked. The locations of the fleet are concealed from the other player. Players alternate turns calling \"shots\" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.        Battleship is known worldwide as a pencil and paper game which dates from World War I. It was published by various companies as a pad-and-pencil game in the 1930s, and was released as a plastic board game by Milton Bradley in 1967. The game has spawned electronic versions, video games, smart device apps and a film."
-
-#: lib/bship_web/templates/lobby/show.html.eex:31
-msgid "bship-rules"
-msgstr "After the ships have been positioned, the game proceeds in a series of rounds. In each round, each player takes a turn to announce a target square in the opponent's grid which is to be shot at. The opponent announces whether or not the square is occupied by a ship, and if it is a \"miss\", the opponent player marks their primary grid with a white peg; if a \"hit\" they mark this on their own primary grid with a red peg. The attacking player notes the hit or miss on their own \"tracking\" grid with the appropriate color peg (red for \"hit\", white for \"miss\"), in order to build up a picture of the opponent's fleet.        When all of the squares of a ship have been hit, the ship is sunk, and the ship's owner announces this (e.g. \"You sank my battleship!\"). If all of a player's ships have been sunk, the game is over and their opponent wins."
-
-#: lib/bship_web/templates/lobby/show.html.eex:28
+#: lib/bship_web/templates/lobby/show.html.eex:25
 msgid "介绍:"
 msgstr "Introduce"
 
-#: lib/bship_web/templates/lobby/show.html.eex:30
+#: lib/bship_web/templates/lobby/show.html.eex:31
 msgid "玩法:"
 msgstr "Rules"
 
-#: lib/bship_web/templates/lobby/show.html.eex:38
+#: lib/bship_web/templates/lobby/show.html.eex:43
 msgid "发送"
 msgstr "Send"
 
 #: lib/bship_web/templates/lobby/show.html.eex:18
 msgid "在线玩家"
 msgstr "Online Players"
+
+#: lib/bship_web/controllers/auth_controller.ex:12
+msgid "请先登录后,再进入游戏厅"
+msgstr "Please sign in before join lobby"
+
+#, fuzzy
+#: lib/bship_web/templates/page/index.html.eex:2
+msgid "一个简单的%{name}!"
+msgstr "A simple %{name}!"
