@@ -43,6 +43,7 @@ defmodule Bship.Mixfile do
       {:cowboy, "~> 1.0"},
       {:guardian, "~> 1.0"},
       {:comeonin, "~> 2.5.3"},
+      {:distillery, "~> 1.5", runtime: false},
     ]
   end
 

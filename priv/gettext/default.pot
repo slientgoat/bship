@@ -155,3 +155,23 @@ msgstr ""
 #: lib/bship_web/templates/lobby/show.html.eex:48
 msgid "大厅消息"
 msgstr ""
+
+#: lib/bship_web/controllers/auth_controller.ex:55
+msgid "Account or Password is invaild."
+msgstr ""
+
+#: lib/bship_web/controllers/auth_controller.ex:85
+msgid "Password change successfully."
+msgstr ""
+
+#: lib/bship_web/controllers/auth_controller.ex:50
+msgid "Sign in successfully."
+msgstr ""
+
+#: lib/bship_web/controllers/auth_controller.ex:64
+msgid "Sign out successfully."
+msgstr ""
+
+#: lib/bship_web/controllers/auth_controller.ex:30
+msgid "Sign up successfully."
+msgstr ""

@@ -27,7 +27,7 @@ defmodule BshipWeb.AuthController do
     case User.create_user_info(auth_params) do
       {:ok, user} ->
         conn
-        |> put_flash(:info, "Sign up successfully.")
+        |> put_flash(:info, gettext "Sign up successfully.")
         |> Bship.Guardian.Plug.sign_in(user)
         |> redirect(to: page_path(conn, :index))
       {:error, %Ecto.Changeset{} = changeset} ->
@@ -47,11 +47,13 @@ defmodule BshipWeb.AuthController do
     case User.check_auth(user, pwd) do
       true ->
         conn
-        |> put_flash(:info, "Sign in successfully.")
+        |> put_flash(:info, gettext("Sign in successfully."))
         |> Bship.Guardian.Plug.sign_in(user)
         |> redirect(to: page_path(conn, :index))
-      {:error, %Ecto.Changeset{} = changeset} ->
-        render(conn, "sign_in.html", changeset: changeset)
+      false ->
+        conn
+        |> put_flash(:error, gettext("Account or Password is invaild."))
+        |> render("sign_in.html", changeset: User.change_user_info(%UserInfo{}))
     end
   end
 
@@ -59,7 +61,7 @@ defmodule BshipWeb.AuthController do
   def do_sign_out(conn, %{}) do
     conn
     |> Bship.Guardian.Plug.sign_out()
-    |> put_flash(:info, "Sign out successfully.")
+    |> put_flash(:info, gettext "Sign out successfully.")
     |> redirect(to: page_path(conn, :index))
   end
 
@@ -80,7 +82,7 @@ defmodule BshipWeb.AuthController do
     case User.chg_pwd(user, auth_params) do
       {:ok, user} ->
         conn
-        |> put_flash(:info, "Password change successfully.")
+        |> put_flash(:info, gettext "Password change successfully.")
         |> redirect(to: page_path(conn, :index, user))
       {:error, %Ecto.Changeset{} = changeset} ->
         render(conn, "change_pwd.html", changeset: changeset)
