@@ -128,7 +128,7 @@ msgstr "A game labby base on phoenixframework"
 msgid "你好"
 msgstr "Hello"
 
-#: lib/bship_web/templates/lobby/show.html.eex:89
+#: lib/bship_web/templates/lobby/show.html.eex:104
 msgid "在线玩家"
 msgstr "Online Players"
 
@@ -175,3 +175,15 @@ msgstr ""
 #: lib/bship_web/controllers/auth_controller.ex:30
 msgid "Sign up successfully."
 msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:90
+msgid "创建游戏"
+msgstr "Create Game"
+
+#: lib/bship_web/templates/lobby/show.html.eex:93
+msgid "加入游戏"
+msgstr "Join Game"
+
+#: lib/bship_web/templates/lobby/show.html.eex:96
+msgid "返回首页"
+msgstr "Back Home"

@@ -8,10 +8,10 @@
 ## date. Leave `msgstr`s empty as changing them here as no
 ## effect: edit them in PO (`.po`) files instead.
 ## From BshipWeb.LobbyController.show/2
-msgid "Bship-introduce"
+msgid "BattleShip-introduce"
 msgstr ""
 
-msgid "Bship-rules"
+msgid "BattleShip-rules"
 msgstr ""
 
 msgid "Mines-introduce"

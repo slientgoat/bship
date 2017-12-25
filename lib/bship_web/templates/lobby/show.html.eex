@@ -82,6 +82,21 @@
                     %>
                 </div>
             </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-body" id="rules" style="text-align: center">
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default btn-block"><%= gettext("创建游戏") %></button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default btn-block"><%= gettext("加入游戏") %></button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default btn-block"><%= gettext("返回首页") %></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-md-3">
             <div class="panel panel-default">
