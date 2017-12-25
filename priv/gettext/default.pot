@@ -53,6 +53,7 @@ msgstr ""
 msgid "退出"
 msgstr ""
 
+#: lib/bship_web/templates/lobby/show.html.eex:34
 #: lib/bship_web/templates/share/add_a.html.eex:4
 msgid "首页"
 msgstr ""
@@ -127,19 +128,7 @@ msgstr ""
 msgid "你好"
 msgstr ""
 
-#: lib/bship_web/templates/lobby/show.html.eex:25
-msgid "介绍:"
-msgstr ""
-
-#: lib/bship_web/templates/lobby/show.html.eex:31
-msgid "玩法:"
-msgstr ""
-
-#: lib/bship_web/templates/lobby/show.html.eex:43
-msgid "发送"
-msgstr ""
-
-#: lib/bship_web/templates/lobby/show.html.eex:18
+#: lib/bship_web/templates/lobby/show.html.eex:89
 msgid "在线玩家"
 msgstr ""
 
@@ -149,4 +138,20 @@ msgstr ""
 
 #: lib/bship_web/templates/page/index.html.eex:2
 msgid "一个简单的%{name}!"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:65
+msgid "介绍"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:76
+msgid "玩法"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:56
+msgid "发送"
+msgstr ""
+
+#: lib/bship_web/templates/lobby/show.html.eex:48
+msgid "大厅消息"
 msgstr ""

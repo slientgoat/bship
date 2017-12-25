@@ -5,7 +5,7 @@
 // and connect at the socket path in "lib/web/endpoint.ex":
 import {Socket,Presence} from "phoenix"
 
-let socket = new Socket("/socket", {params: {token: window.userToken}});
+let socket = new Socket("/socket", {params: {token: window.userToken,locale: $("html").attr("lang")}});
 
 socket.connect();
 
@@ -14,7 +14,7 @@ socket.connect();
 let presences = {}
 let lobby = socket.channel("lobby:" + window.lobbyId, {});
 let chatInput = document.querySelector("#chat-input");
-let messagesContainer = document.querySelector("#messages");
+let messagesContainer = document.querySelector("#lobby_msgs");
 let online_players = document.querySelector("#online_players");
 
 chatInput.addEventListener("keypress", event => {
@@ -33,16 +33,17 @@ function push_msg() {
 
 function renderOnlineUsers(presences) {
     online_players.innerHTML="";
+    let users = ""
     console.log(presences,12)
     Presence.list(presences, (id, {metas: [first, ...rest]}) => {
-        console.log(first)
-        var li = '<li>' + first.nick + '</li>';
-        online_players.append(li)
-        // let count = rest.length + 1
+        let count = rest.length + 1
+        var li = '<li class="list-group-item">' + first.nick + '('+count+')'+'</li>';
+        users += li;
+        //
         // response += `<br>nick: +"first.nick"+ ${id} (count: ${count})</br>`
     });
 
-    // online_players.innerHTML = response;
+    online_players.innerHTML = users;
 }
 
 lobby.on("presence_state", state => {

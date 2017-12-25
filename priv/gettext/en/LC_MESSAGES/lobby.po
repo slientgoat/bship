@@ -21,3 +21,6 @@ msgstr "Introduce for Mines"
 
 msgid "Mines-rules"
 msgstr "Rules for Mines"
+
+msgid "您"
+msgstr "You"

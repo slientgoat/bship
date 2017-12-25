@@ -11,6 +11,7 @@ defmodule BshipWeb.LobbyChannel do
   end
 
   def handle_info(:after_join, socket) do
+    Gettext.put_locale(BshipWeb.Gettext, socket.assigns[:locale])
     push socket, "presence_state", Presence.list(socket)
     user = socket.assigns.user
     {:ok, _} = Presence.track(socket, user.id, %{
@@ -28,7 +29,7 @@ defmodule BshipWeb.LobbyChannel do
   intercept ["new_msg"]
 
   def handle_out("new_msg", %{body: body,from: from}, socket) do
-    nick = if from == socket.assigns.user.id,do: "您",else: socket.assigns.user.nick
+    nick = if from == socket.assigns.user.id,do: lobby_text("您"),else: socket.assigns.user.nick
     push socket, "new_msg", %{body: body,nick: nick}
     {:noreply, socket}
   end

@@ -21,3 +21,6 @@ msgstr "扫雷介绍"
 
 msgid "Mines-rules"
 msgstr "扫雷规则"
+
+msgid "您"
+msgstr ""

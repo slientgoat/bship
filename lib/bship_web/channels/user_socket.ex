@@ -8,10 +8,13 @@ defmodule BshipWeb.UserSocket do
   transport :websocket, Phoenix.Transports.WebSocket
   # transport :longpoll, Phoenix.Transports.LongPoll
 
-  def connect(%{"token" => token}, socket) do
+  def connect(%{"token" => token,"locale"=>locale}, socket) do
     case Guardian.Phoenix.Socket.authenticate(socket, Bship.Guardian, token) do
       {:ok, authed_socket} ->
-        {:ok, assign(authed_socket,:user,Guardian.Phoenix.Socket.current_resource(authed_socket))}
+        authed_socket = authed_socket
+        |> assign(:user,Guardian.Phoenix.Socket.current_resource(authed_socket))
+        |> assign(:locale,locale)
+        {:ok, authed_socket}
       {:error, _} -> :error
     end
   end

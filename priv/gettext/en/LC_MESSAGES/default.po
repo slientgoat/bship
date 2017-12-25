@@ -53,6 +53,7 @@ msgstr "Submit"
 msgid "退出"
 msgstr "SignOut"
 
+#: lib/bship_web/templates/lobby/show.html.eex:34
 #: lib/bship_web/templates/share/add_a.html.eex:4
 msgid "首页"
 msgstr "Home"
@@ -127,19 +128,7 @@ msgstr "A game labby base on phoenixframework"
 msgid "你好"
 msgstr "Hello"
 
-#: lib/bship_web/templates/lobby/show.html.eex:25
-msgid "介绍:"
-msgstr "Introduce"
-
-#: lib/bship_web/templates/lobby/show.html.eex:31
-msgid "玩法:"
-msgstr "Rules"
-
-#: lib/bship_web/templates/lobby/show.html.eex:43
-msgid "发送"
-msgstr "Send"
-
-#: lib/bship_web/templates/lobby/show.html.eex:18
+#: lib/bship_web/templates/lobby/show.html.eex:89
 msgid "在线玩家"
 msgstr "Online Players"
 
@@ -147,7 +136,22 @@ msgstr "Online Players"
 msgid "请先登录后,再进入游戏厅"
 msgstr "Please sign in before join lobby"
 
-#, fuzzy
 #: lib/bship_web/templates/page/index.html.eex:2
 msgid "一个简单的%{name}!"
 msgstr "A simple %{name}!"
+
+#: lib/bship_web/templates/lobby/show.html.eex:65
+msgid "介绍"
+msgstr "Introduce"
+
+#: lib/bship_web/templates/lobby/show.html.eex:76
+msgid "玩法"
+msgstr "Rules"
+
+#: lib/bship_web/templates/lobby/show.html.eex:56
+msgid "发送"
+msgstr "Send"
+
+#: lib/bship_web/templates/lobby/show.html.eex:48
+msgid "大厅消息"
+msgstr "Lobby Messages"
