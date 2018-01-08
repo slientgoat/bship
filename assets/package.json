@@ -5,6 +5,16 @@
     "deploy": "brunch build --production",
     "watch": "brunch watch --stdin"
   },
+  "apidoc": {
+    "name": "bship",
+    "version": "0.0.1",
+    "sampleUrl": "http://localhost:4000",
+    "description": "apiDoc basic example",
+    "apidoc": {
+      "title": "bship server test",
+      "url": "http://localhost:4000"
+    }
+  },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "phoenix": "file:../deps/phoenix",

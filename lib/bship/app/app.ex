@@ -36,6 +36,7 @@ defmodule Bship.App do
 
   """
   def get_app_info!(id), do: Repo.get!(AppInfo, id)
+  def get_app_info(id), do: Repo.get(AppInfo, id)
 
   @doc """
   Creates a app_info.

@@ -2,8 +2,7 @@ defmodule Bship.App.AppInfo do
   use Ecto.Schema
   import Ecto.Changeset
   alias Bship.App.AppInfo
-
-
+  @derive {Poison.Encoder, except: [:__meta__]}
   schema "apps" do
     field :eq, :integer
     field :gt, :integer

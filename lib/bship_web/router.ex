@@ -26,6 +26,7 @@ defmodule BshipWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug :put_access_control_allow_origin
   end
 
   scope "/", BshipWeb do
@@ -39,6 +40,14 @@ defmodule BshipWeb.Router do
     resources "/apps", AppInfoController
     resources "/users", UserInfoController, except: [:delete]
     resources "/lobbies", LobbyController
+  end
+
+  scope "/api", BshipWeb do
+    pipe_through [:api]
+    get "/apps", PageController, :apps
+    get "/app/:id", PageController, :app
+    get "/app2/", PageController, :app2
+
   end
 
   scope "/auth", BshipWeb do
@@ -62,5 +71,9 @@ defmodule BshipWeb.Router do
     else
       conn
     end
+  end
+
+  defp put_access_control_allow_origin(conn, _) do
+    put_resp_header(conn,"access-control-allow-origin","*")
   end
 end
