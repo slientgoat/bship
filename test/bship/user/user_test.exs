@@ -6,8 +6,8 @@ defmodule Bship.UserTest do
   describe "users" do
     alias Bship.User.UserInfo
 
-    @valid_attrs %{account: "some account", nick: "some nick", pwd_hash: "some pwd_hash"}
-    @update_attrs %{account: "some updated account", nick: "some updated nick", pwd_hash: "some updated pwd_hash"}
+    @valid_attrs %{account: "some@account.com", nick: "some nick", pwd_hash: "some pwd_hash", pwd: "123456"}
+    @update_attrs %{account: "some@updated.com", nick: "some updated nick", pwd_hash: "some updated pwd_hash", pwd: "123456"}
     @invalid_attrs %{account: nil, nick: nil, pwd_hash: nil}
 
     def user_info_fixture(attrs \\ %{}) do
@@ -16,7 +16,7 @@ defmodule Bship.UserTest do
         |> Enum.into(@valid_attrs)
         |> User.create_user_info()
 
-      user_info
+      user_info |> Map.put(:pwd,nil)
     end
 
     test "list_users/0 returns all users" do
@@ -31,9 +31,9 @@ defmodule Bship.UserTest do
 
     test "create_user_info/1 with valid data creates a user_info" do
       assert {:ok, %UserInfo{} = user_info} = User.create_user_info(@valid_attrs)
-      assert user_info.account == "some account"
+      assert user_info.account == "some@account.com"
       assert user_info.nick == "some nick"
-      assert user_info.pwd_hash == "some pwd_hash"
+      assert is_binary(user_info.pwd_hash) == true
     end
 
     test "create_user_info/1 with invalid data returns error changeset" do
@@ -44,9 +44,9 @@ defmodule Bship.UserTest do
       user_info = user_info_fixture()
       assert {:ok, user_info} = User.update_user_info(user_info, @update_attrs)
       assert %UserInfo{} = user_info
-      assert user_info.account == "some updated account"
+      assert user_info.account == "some@updated.com"
       assert user_info.nick == "some updated nick"
-      assert user_info.pwd_hash == "some updated pwd_hash"
+      assert is_binary(user_info.pwd_hash) == true
     end
 
     test "update_user_info/2 with invalid data returns error changeset" do

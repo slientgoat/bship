@@ -6,8 +6,8 @@ defmodule Bship.Player.Attr do
 
   schema "attrs" do
     field :score, :integer
-    field :uid, :id
-    field :appid, :id
+    field :uid_id, :id
+    field :appid_id, :id
 
     timestamps()
   end
